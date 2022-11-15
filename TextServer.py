@@ -9,8 +9,8 @@ redis_host = "localhost"
 redis_port = 6379
 msg = ""
 
-account_sid = ""
-auth_token = ''
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
 client = Client(account_sid, auth_token)
 my_twilio_num = '+18609796457'
 admin_num = "+18019604992"
